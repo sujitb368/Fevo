@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-              
-        <nav class="nav">
+    
+    <div class="container">  
+        <nav class="nav" id="nav">
             <div class="nav_left">
                 <img src="./img/logo.svg" alt="logo" class="logo">
 
@@ -22,10 +23,29 @@
                         <div class="arrow">&#129083;</div>
                     </div>
                     <div class="drop_down">
+
                         <a href="" class="drop_down_item">our partners</a>
                         <a href="" class="drop_down_item">case studies</a>
+
+
+                        <div class="drop_down_question">
+                            <div class="drop_down_left">
+                                <div class="drop_down_question_header">
+                                    Are you ready to FEVO?
+                                </div>
+                                <div class="drop_down_question_text">
+                                    Turn your shopping cart into a social experience.
+                                </div>
+                            </div>
+
+                            <div class="drop_down_right">
+                                <button class="btn">contact us</button >
+                            </div>
+                        </div>
                     </div>
+
                 </div>
+
                 <div class="header_item" href="http://">
                     <div class="nav_item">
                         <div class="item">company </div>
@@ -36,6 +56,22 @@
                         <a href="" class="drop_down_item">blog</a>
                         <a href="" class="drop_down_item">careers</a>
                         <a href="" class="drop_down_item">contact us</a>
+
+                        <div class="drop_down_question">
+                            <div class="drop_down_left">
+                                <div class="drop_down_question_header">
+                                    Let's Talk!
+                                </div>
+                                <div class="drop_down_question_text">
+                                    Contact us and someone from our team will get in touch.
+                                </div>
+                            </div>
+
+                            <div class="drop_down_right">
+                                <button class="btn">contact us</button >
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="header_item" href="http://">
@@ -46,16 +82,32 @@
                     <div class="drop_down">
                         <a href="" class="drop_down_item">support</a>
                         <a href="" class="drop_down_item">sdk documentation</a>
+
+                        <div class="drop_down_question">
+                            <div class="drop_down_left">
+                                <div class="drop_down_question_header">
+                                    Still need more help?
+                                </div>
+                                <div class="drop_down_question_text">
+                                    Contact us and someone will get in touch.
+                                </div>
+                            </div>
+
+                            <div class="drop_down_right">
+                                <button class="btn">contact us</button >
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <a class="a_btn"><button class="btn">learn more</button></a>
         </nav>
-    
+          
         <div class="founder">
             <div class="left_img">
 
-                <img src="./img/founder.png" width="561" alt="" class="founder_img">
+                <img src="./img/founder.png" width="561" height="500" alt="" class="founder_img">
 
 
             </div>
@@ -78,24 +130,25 @@
 
         <div class="section_2">
             <div class="section_2_left">
-                <h2 class="section_2_left_info">
+                <h2 class="section_2_left_info" data-aos="fade-up">
                     YOUR&nbsp;CUSTOMER, THEIR&nbsp;NETWORK
                 </h2>
-                <p class="section_2_left_p">
+                <p class="section_2_left_p" data-aos="fade-up">
                     FEVO's Social Cart enables the fun and engagement of social media in a shopping cart.
                     <br>
                     <br>
                     Why let your customers shop alone?
                 </p>
-                <a href="" class="section_2_left_learnmore">
+                <a href="" class="section_2_left_learnmore" data-aos="fade-up">
                     <div class="learn_more">LEARN MORE</div>
                     <div class="arrow">&#8594;</div>
                 </a>
             </div>
-            <img class="animat" data-animate="slideUp 2s"
+            <img class="animat" data-aos="zoom-in-up" data-animate="slideUp 2s"
                 src="https://assets.website-files.com/603159d94787b78aab640dac/60502a1f905f4a46df1ba705_FEVO_hp_product_image_v03.png"
                 width="500" height="850" alt="image">
         </div>
+
         <div class="cicle_product_container">
             <div class="circle_product_info">
                 <h1 class="cicle_product_info_h1">Our Partners</h1>
@@ -127,10 +180,86 @@
 
         </div>
     </div>
+    </div>
+
+    <div class="white_container">
+        <div class="success">
+            Fevo Success Stories — Since 2017
+            <a href="" class="success_view_all">
+                <div class="success_view">
+                    view all
+                </div>
+                <div class="success_arrow">
+                    &#8594;
+                </div>
+            </a>
+        </div>
+
+        <div class="numbers_container">
+            <div class="number_box">
+                <h3>600+</h3>
+                <p>
+                    blue-chip
+                    <br>
+                    brands
+                </p>
+            </div>
+            <div class="number_box">
+                <h3>100%</h3>
+                <p>
+                    net partner
+                    <br>
+                    retention
+                </p>
+            </div>
+            <div class="number_box">
+                <h3>1.6mm</h3>
+                <p>
+                    happy
+                    <br>
+                    customers
+                </p>
+            </div>
+            <div class="number_box">
+                <h3>4.4mm</h3>
+                <p>
+                    items
+                    <br>
+                    sold
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="swap">
+        <div class="swap_item">
+            <img src="./img/carousel_1.jpg" width="200" height="200" alt="">
+        </div>
+        <div class="swap_item">
+            <img src="./img/carousel_2.png" width="200" height="200" alt="">
+        </div>
+        <div class="swap_item">
+            <img src="./img/carousel_3.jpg" width="200" height="200" alt="">
+        </div>
+    </div>
+
+
+
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 220,
+            delay: 0.5,
+            duration: 800,
+            easing: 'ease',
+            once: true,
+        });
+    </script>
 </body>
 
 </html>
