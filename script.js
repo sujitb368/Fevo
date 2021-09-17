@@ -2,6 +2,9 @@
 const to_animate = document.querySelectorAll(".to_animate");
 const header_item = document.querySelectorAll(".header_item");
 const drop_down = document.querySelectorAll(".drop_down");
+const icon = document.querySelector(".icon");
+const nav_links = document.querySelector(".nav_links");
+
 // const navbar = document.getElementById("nav");
 
 const callback_fun = (entries, observer) => {
@@ -31,18 +34,7 @@ const my_obserber = new IntersectionObserver(callback_fun, options);
 to_animate.forEach(done => {
     my_obserber.observe(done);
 })
-// const scrollFunction = () => {
-//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//         console.log(document.body.scrollTop);
-//         navbar.style.padding = " 0 40px";
 
-//     } else {
-//         console.log("inside else");
-//         navbar.style.padding = "50px 40px 10 40px;";
-
-//     }
-
-// }
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -52,3 +44,10 @@ function scrollFunction() {
     document.getElementById("nav").style.padding = "50px 40px 10 40px";
   }
 }
+
+icon.addEventListener("click", function(){
+  // header_item.style.display = "block";
+  // console.log(icon);
+  nav_links.classList.toggle("nav_links_active");
+
+})
