@@ -184,9 +184,7 @@ a{
     text-transform: uppercase;
     /* background-color: blue; */
 }
-.nav_left img{
-    /* margin-left: 15px; */
-}
+
 .nav_links{
     display: flex;
     /* background-color: blueviolet; */
@@ -479,7 +477,7 @@ color: black;
 
 /* responsive */
 
-@media only screen and (max-width: 770px)  {    
+@media only screen and (max-width: 770px)   {    
     
     .nav_left{
         width: 72%;
@@ -609,7 +607,7 @@ color: black;
     
 
   }
- 
+
   @media screen and (max-width:600px) {
     html{
         overflow-x: hidden;
@@ -645,3 +643,6 @@ color: black;
           margin-right: 3px;
       }
     }
+
+ 
+ 
