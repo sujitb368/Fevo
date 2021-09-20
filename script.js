@@ -4,6 +4,8 @@ const header_item = document.querySelectorAll(".header_item");
 const drop_down = document.querySelectorAll(".drop_down");
 const icon = document.querySelector(".icon");
 const nav_links = document.querySelector(".nav_links");
+const nav = document.getElementById("nav")
+const container = document.getElementById("container")
 
 // const navbar = document.getElementById("nav");
 
@@ -35,19 +37,49 @@ to_animate.forEach(done => {
     my_obserber.observe(done);
 })
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("nav").style.padding = "0 40px";
-  } else {
-    document.getElementById("nav").style.padding = "50px 40px 10 40px";
+    nav.classList.remove("nav_top_padding")
+  
+  } 
+  else {
+    
+    nav.classList.add("nav_top_padding")
   }
 }
 
-icon.addEventListener("click", function(){
-  // header_item.style.display = "block";
-  // console.log(icon);
-  nav_links.classList.toggle("nav_links_active");
+const overlay = document.querySelector(".overlay");
 
+const burger = document.querySelector("#burger");
+const cross = document.querySelector("#cross");
+
+function close(){
+  nav_links.classList.remove("nav_links_active");
+    overlay.classList.remove("overlay_active")
+
+}
+overlay.addEventListener("click", close);
+
+icon.addEventListener("click", function(){
+  
+  if( nav_links.classList.contains("nav_links_active")){
+    
+    close();
+
+  }else{
+    nav_links.classList.add("nav_links_active");
+    overlay.classList.add("overlay_active");
+    cross.classList.add("icon_cross_active")
+  }
+ 
+
+})
+
+cross.addEventListener("click", ()=>{
+  cross.classList.remove("icon_cross_active");
+  close()
 })

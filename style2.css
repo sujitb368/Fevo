@@ -1,0 +1,30 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+}
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+}
+.left_navigation{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
